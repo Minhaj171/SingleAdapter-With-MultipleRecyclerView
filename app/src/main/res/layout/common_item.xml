@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="7dp"
+        android:elevation="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/item_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:text="Tomorrow holiday, 26 march…"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subject"
+                android:maxLines="3"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginTop="5dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="5dp"
+                android:text="July 6, 555555555555555552020"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:gravity="end"
+                android:layout_toRightOf="@+id/description"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/description" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
