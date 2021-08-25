@@ -1,11 +1,11 @@
 package com.example.myapplication.model;
 
-public class SampleItems {
+public class BaseModel {
     private String subject;
     private String date;
     private String description;
 
-    public SampleItems(String subject, String date, String description) {
+    public BaseModel(String subject, String date, String description) {
         this.subject = subject;
         this.date = date;
         this.description = description;

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="mainFragmentBinding"
-            type="com.example.myapplication.model.SampleItems" />
+            type="com.example.myapplication.model.BaseModel" />
     </data>
 
     <LinearLayout
