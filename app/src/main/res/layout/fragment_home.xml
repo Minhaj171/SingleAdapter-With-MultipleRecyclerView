@@ -33,7 +33,7 @@
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:maxLines="1"
-                android:text="Layout one"
+                android:text="Multiple adapter"
                 android:textSize="22sp"
                 />
 
@@ -49,7 +49,7 @@
             android:layout_margin="20dp"
             app:cardCornerRadius="10dp"
             android:foreground="?android:attr/selectableItemBackground"
-            app:cardBackgroundColor="@color/teal_700">
+            app:cardBackgroundColor="@color/teal_200">
 
             <TextView
                 android:id="@+id/text_two"
@@ -59,7 +59,33 @@
                 android:textColor="@color/white"
                 android:layout_gravity="center"
                 android:maxLines="1"
-                android:text="Layout two"
+                android:text="Single item"
+                android:textSize="22sp"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_test_binding"
+            android:layout_below="@+id/cardview_sub_main"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="10dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/green">
+
+            <TextView
+                android:id="@+id/text_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:text="DataBiding"
                 android:textSize="22sp"
                 />
 

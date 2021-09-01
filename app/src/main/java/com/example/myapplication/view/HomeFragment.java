@@ -42,26 +42,29 @@ public class HomeFragment extends Fragment {
     private void navigate(){
         sendToMain();
         sendToSubMain();
+        sendToTestBinding();
+    }
+
+    private void sendToTestBinding() {
+        homeBinding.cardviewTestBinding.setOnClickListener(v ->
+                Navigation.findNavController(root).navigate(R.id.action_homeFragment_to_testData));
     }
 
     private void sendToMain(){
-        homeBinding.cardviewMain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(root).navigate(R.id.action_homeFragment_to_mainFragment);
-            }
-        });
+        homeBinding.cardviewMain.setOnClickListener(v ->
+                Navigation.findNavController(root).navigate(R.id.action_homeFragment_to_mainFragment));
     }
 
     private void sendToSubMain(){
-        homeBinding.cardviewSubMain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(root).navigate(R.id.action_homeFragment_to_subMainFragment);
-                Toast.makeText(getContext(),"Swipe left on cardview",Toast.LENGTH_LONG).show();
-            }
+        homeBinding.cardviewSubMain.setOnClickListener(v -> {
+            Navigation.findNavController(root).navigate(R.id.action_homeFragment_to_subMainFragment);
+            Toast.makeText(getContext(),"Swipe left on cardview",Toast.LENGTH_LONG).show();
         });
     }
+
+
+
+
 
 
 }

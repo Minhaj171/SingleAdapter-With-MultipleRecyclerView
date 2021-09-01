@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/item_layout_view"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -57,6 +58,16 @@
                 android:layout_toRightOf="@+id/description"
                 android:layout_alignParentRight="true"
                 android:layout_toEndOf="@+id/description" />
+
+            <ImageView
+                android:id="@+id/check_mark"
+                android:layout_width="26dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_check"
+                android:layout_margin="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" />
 
         </RelativeLayout>
 

@@ -29,11 +29,23 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_testData"
+            app:destination="@id/testData" />
     </fragment>
     <fragment
         android:id="@+id/subMainFragment"
         android:name="com.example.myapplication.view.SubMainFragment"
         android:label="Example two"
         tools:layout="@layout/fragment_sub_main" />
+    <fragment
+        android:id="@+id/testData"
+        android:name="com.example.myapplication.view.TestData"
+        android:label="TestData"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        />
 
 </navigation>

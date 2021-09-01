@@ -41,19 +41,19 @@ public class SubMainFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        configureRecyclerViewSubMain();
+//        configureRecyclerViewSubMain();
     }
 
-    private void configureRecyclerViewSubMain() {
-        SampleAdapter sampleAdapter = new SampleAdapter();
-        subMainBinding.recyclerViewTwo.setAdapter(sampleAdapter);
-        subMainBinding.recyclerViewTwo.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-
-        List<BaseModel> sampleItems = new ArrayList<>();
-        sampleItems.add(new BaseModel("Arabic", "May 2, 2021", "Jannah is the Muslim concept of heaven or paradise, where good and faithful Muslims go after Judgment Day. Jannah is a beautiful, peaceful garden where water flows and abundant food and drink are served to the dead and their families. Jannah has eight gates"));
-        sampleItems.add(new BaseModel("Urdu", "April 22, 2021", "Jannah is the Muslim concept of heaven or paradise, where good and faithful Muslims go after Judgment Day. Jannah is a beautiful, peaceful garden where water flows and abundant food and drink are served to the dead and their families. Jannah has eight gates"));
-
-        sampleAdapter.setDatatoAdapter(sampleItems, getContext(), SubMainFragment.class.getSimpleName());
-    }
+//    private void configureRecyclerViewSubMain() {
+//        SampleAdapter sampleAdapter = new SampleAdapter();
+//        subMainBinding.recyclerViewTwo.setAdapter(sampleAdapter);
+//        subMainBinding.recyclerViewTwo.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+//
+//        List<BaseModel> sampleItems = new ArrayList<>();
+//        sampleItems.add(new BaseModel("Arabic", "May 2, 2021", "Jannah is the Muslim concept of heaven or paradise, where good and faithful Muslims go after Judgment Day. Jannah is a beautiful, peaceful garden where water flows and abundant food and drink are served to the dead and their families. Jannah has eight gates"));
+//        sampleItems.add(new BaseModel("Urdu", "April 22, 2021", "Jannah is the Muslim concept of heaven or paradise, where good and faithful Muslims go after Judgment Day. Jannah is a beautiful, peaceful garden where water flows and abundant food and drink are served to the dead and their families. Jannah has eight gates"));
+//
+//        sampleAdapter.setDatatoAdapter(sampleItems, getContext(), SubMainFragment.class.getSimpleName());
+//    }
 
 }
